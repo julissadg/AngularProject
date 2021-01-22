@@ -1,0 +1,16 @@
+<div class="main-container">
+  <div class="login-container" [formGroup]= "formLogin">
+    <mat-form-field>
+      <mat-label>E-mail</mat-label>
+      <input matInput placeholder="Julissa@hotmail.com" formControlName= "email">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input matInput type="password" formControlName = "password">
+    </mat-form-field>
+    <button mat-raised-button color="primary" [disabled]="formLogin.invalid" (click)="loginClick()">
+      Ingresar
+    </button>
+  </div>
+</div>
+

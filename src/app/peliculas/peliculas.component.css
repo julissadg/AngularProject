@@ -1,0 +1,17 @@
+.peliculas-container{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-top: 80px;
+}
+
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.peliculas-h1{
+  text-align: center;
+}

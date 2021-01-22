@@ -1,0 +1,20 @@
+<div class="main-container">
+  <div class="peliculas-container" [formGroup]= "formPeliculas">
+    <h1 class="peliculas-h1">Peliculas</h1>
+    <mat-form-field>
+      <mat-label>Titulo</mat-label>
+      <input matInput placeholder="El exorcista" formControlName= "titulo">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Genero</mat-label>
+      <input matInput placeholder="Terror" formControlName = "genero">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Director</mat-label>
+      <input matInput placeholder="William Friedkin" formControlName = "director">
+    </mat-form-field>
+    <button mat-raised-button color="primary" [disabled]="formPeliculas.invalid" (click)="peliculasSave()">
+      Buscar
+    </button>
+  </div>
+</div>
